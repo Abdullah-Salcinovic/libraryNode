@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Book</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container form-container">
+        <h1>Add New Book</h1>
+        <form action="/books/new" method="POST">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" required>
+            
+            <label for="genre">Genre</label>
+            <input type="text" id="genre" name="genre">
+            
+            <button type="submit">Add Book</button>
+        </form>
+        <a href="/books">Cancel</a>
+    </div>
+</body>
+</html>
